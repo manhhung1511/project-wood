@@ -1,0 +1,140 @@
+form {
+    margin-left: 0px !important;
+}
+.login {
+    display: flex;
+    &_content {
+        margin: auto;
+        background: #ffff;
+        padding: 40px;
+        width: 528px;
+        border-radius: 8px;
+        position: relative;
+        &-logo {
+            text-align: center;
+            margin-bottom: 24px;
+            img {
+                width: 138px;
+            }
+        }
+        h3 {
+            color: var(--text-color8);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        p {
+            color: var(--text-color6);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+
+    &_about {
+        display: flex;
+    }
+
+    &_email {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        input {
+            // color: var(--text-color4);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            border-radius: 8px;
+            border: 1px solid var(--text-color2);
+            background: var(--white);
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.06);
+            outline:none;
+            padding: 10px 12px;
+            width: 100%;
+        }
+        p {
+            color: var(--text-color9);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+  &_detail {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        input {
+            // color: var(--text-color4);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            border-radius: 8px;
+            border: 1px solid var(--text-color2);
+            background: var(--white);
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.06);
+            outline:none;
+            padding: 10px 12px;
+            width: 100%;
+        }
+        p {
+            color: var(--text-color9);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+    
+    &_province,&_district,&_number,&_name {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        input {
+            // color: var(--text-color4);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            border-radius: 8px;
+            border: 1px solid var(--text-color2);
+            background: var(--white);
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.06);
+            outline:none;
+            padding: 10px 12px;
+            width: 90%;
+        }
+        p {
+            color: var(--text-color9);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+    &_button {
+        width: 100%;
+        outline: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        background: var(--primary-1, #081C66);
+        color: var(--White, #FFF);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+    }
+    
+
+}
+
+.button_off {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: #FFF;
+    outline: none;
+    border: none;
+}

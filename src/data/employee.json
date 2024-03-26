@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Nguyễn Minh phong",
+        "email": "minhphong628@gmail.com",
+        "tele": "0336662001",
+        "address": "Thanh Xuân, Hà Nội",
+        "status": 1
+    },
+    {
+        "name": "Nguyễn Manh Hung",
+        "email": "hunga15112001@gmail.com",
+        "tele": "0336662001",
+        "address": "Đống Đa, Hà Nội",
+        "status": 1
+    },
+    {
+        "name": "Nguyễn Manh Dat",
+        "email": "manhdat2001@gmail.com",
+        "tele": "0336662001",
+        "address": "Đống Đa, Hà Nội",
+        "status": 0
+    }
+]

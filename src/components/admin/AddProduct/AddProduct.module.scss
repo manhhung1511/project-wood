@@ -1,0 +1,108 @@
+.add_title {
+    margin-top: 40px;
+    h3 {
+        color: #2E2C34;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px; 
+    }
+}
+
+.form {
+    &_two {
+        display: flex;
+    }
+    &_name,
+    &_number, &_price, &_color {
+        width: 49%;
+        margin-top: 32px;
+        input {
+            width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 1px solid var(--neutral-100, #F1F5F9);
+        background: var(--generic-white, #FFF);
+        
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.4);
+border: none;
+outline: none;
+        }
+        p {
+            color: var(--neutral-900, #0F172A);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        margin-left: 50px;
+    }
+ 
+    &_category,
+    &_size {
+        width: 49%;
+        margin-top: 32px;
+
+        select {
+            width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 1px solid var(--neutral-100, #F1F5F9);
+        background: var(--generic-white, #FFF);
+        
+        /* Shadow/xs */
+        box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.4);
+border: none;
+outline: none;
+
+        }
+        p {
+            color: var(--neutral-900, #0F172A);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        margin-left: 50px;
+
+    }
+
+    &_desc {
+        margin-top: 32px;
+        margin-left: 50px;
+        p {
+            color: var(--neutral-900, #0F172A);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+    &_upload {
+         margin-top: 32px;
+        margin-left: 50px;
+        p {
+            color: var(--neutral-900, #0F172A);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+    }
+
+}
+.add_button {
+    margin-top: 40px;
+    border-radius: 8px;
+        background: #996935;
+        padding: 12px 20px;
+        color: var(--White, #FFF);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        border: none;
+        margin-left: 24px;
+        margin-right: 50px;
+}

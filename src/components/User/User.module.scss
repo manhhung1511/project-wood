@@ -1,0 +1,114 @@
+.user {
+    h3 {
+        color: var(--text-color9);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px; 
+    }
+    p {
+        color: var(--text-color9);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    &_name,
+    &_email,
+    &_password {
+        margin-top: 24px;
+        p {
+            color: var(--text-color9);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+        }
+        input {
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid var(--text-color2);
+            background: var(--white);
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.06);
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+    }
+    .address {
+        margin-top: 40px;
+    }
+    &_address {
+        border-radius: 8px;
+        padding: 24px;
+        h4 {
+            color: var(--text-color8);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; 
+        }
+        p {
+            color: var(--text-color5);
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 8px;
+            border: 1px solid var(--neutral-400, #94A3B8);
+            color: var(--neutral-700, #334155);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; 
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &-edit {
+            button {
+                background-color: #FFF;
+                border:none;
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+.login_name,
+.login_number,
+.login_province,
+.login_district {
+    width: 49%;
+    padding: 16px 0;
+    input {
+        border-radius: 100px;
+        border: 1px solid var(--Foundation-Grey-grey-200, #C9CDD2);
+        background: var(--foundation-black-white-white, #FEFEFE);
+        padding: 10px 20px;
+        width: 100%;
+        outline: none;
+    }
+}
+.login_number,
+.login_district {
+    margin-left: 10px;
+}
+.login_email,
+.login_detail {
+    padding: 16px 0;
+     input {
+        border-radius: 100px;
+        border: 1px solid var(--Foundation-Grey-grey-200, #C9CDD2);
+        background: var(--foundation-black-white-white, #FEFEFE);
+        padding: 10px 20px;
+        width: 100%;
+        outline: none;
+    }
+}

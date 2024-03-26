@@ -1,0 +1,35 @@
+.feedback {
+    padding: 24px;
+    margin-bottom: 80px;
+    &-title {   
+        text-align: center;
+        color: var(--text-color9);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; 
+        margin-bottom: 32px;
+    }
+    &-content {
+        h3 {
+            margin: 20px 0;
+            color: var(--text-color9);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; 
+        }
+        p {
+            overflow: hidden;
+            color: var(--text-color5);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; 
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+    }
+}

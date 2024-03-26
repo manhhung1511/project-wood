@@ -1,0 +1,34 @@
+.branch {
+    border-radius: 8px;
+    background: var(--text-color8);
+    padding: 80px 123px;
+    margin-bottom: 80px;
+    &_title {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; 
+        margin-bottom: 40px;
+    }
+    &_content {
+        display: flex;
+        justify-content: center;
+        &-item {
+            border-radius: 12px;
+            background: #FFF;
+            width: 177.518px;
+            height: 84px;
+            margin-right: 30px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-item:last-child {
+            margin-right: 0px;
+        }
+    }
+}

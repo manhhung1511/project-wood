@@ -1,0 +1,30 @@
+.footer {
+    background: #AD875D;
+    padding: 80px 0px 60px 0px;
+    p {
+        margin-top: 17px;
+        color: var(--white);
+        font-size: 16px;
+        font-style: normal;
+    }
+    h4 {
+        color: var(--white);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        align-items: center;
+        &-list {
+            display: flex;
+            margin-top:30px;
+        }
+        &-item {
+            margin-left: 20px;
+        }
+    }
+}

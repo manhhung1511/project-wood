@@ -1,0 +1,86 @@
+.product_hot {
+    margin: 80px 0;
+    &-title {   
+        color: var(--text1);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px; 
+        margin-bottom: 10px;
+    }
+    &-desc {
+        text-align: center;
+        color: var(--text-color6);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        span {
+            margin-right: 48px;
+        }
+        span:hover {
+            color:var(--primary-color);
+            cursor: pointer;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-1, #081C66);
+        }
+        span:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    &-item {
+        margin-top: 40px;
+    }
+
+    &-item-content {
+        margin-top: 28px;
+        p:nth-child(2) {
+            margin: 8px 0;
+        }
+        &-title {
+            color: var(--text1);
+            font-size: 18px;
+            font-style: normal;
+            line-height: 26px;
+        }
+
+        &-price {
+            color: var(--text1);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            span {
+                color: var(--text-color4);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-decoration: line-through;
+                margin-left: 8px;
+            }
+        }
+    }
+    .product_hot-item {
+        position: relative;
+    }
+    &-item-like {
+        background-color: var(--white);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 3%;
+        right: 8%;
+        border-radius: 40px;
+        padding: 16px;
+        button {
+            position: absolute;
+            top: 4px;
+            left: 5.5px;
+            background: #FFF;
+            outline: none;
+            border: none;
+        }
+    }
+}

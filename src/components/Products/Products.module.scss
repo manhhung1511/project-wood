@@ -1,0 +1,208 @@
+.breadcrumb {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding: 20px;
+    span {
+        color: var(--text-color4);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    span:last-child {
+        color: var(--text1);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+
+.filter {
+    &_title {
+        color: var(--neutral-1, #303030);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; 
+    }
+
+    &_product {
+        margin-top: 40px;
+        &-desc {
+            color: var(--neutral-1, #0B0A0F);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            margin-bottom: 16px;
+        }
+    }
+
+    &_size {
+        margin-top: 30px;
+        &-desc {
+            color: var(--neutral-1, #0B0A0F);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; 
+            margin-bottom: 16px;
+        }
+        button {
+            border-radius: 8px;
+            border: 1px solid var(--neutral-300, #CBD5E1);
+            opacity: 0.8;
+            width: 61px;
+            height: 32px;
+            flex-shrink: 0;
+            margin-right: 15px;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.products {
+    &_title {
+        color: #000;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; 
+        margin-bottom: 24px;
+    }
+
+    &_filter {
+        button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--neutral-400, #94A3B8);
+            font-size: 16px;
+            font-style: normal;
+            line-height: 24px;
+            background-color: #FFF;
+        }
+    }
+}
+.filter {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    padding: 10px 0;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    align-items: center;
+    input {
+        width: 14%;
+        height: 18px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    label {
+        margin-left: 13px;
+        color: var(--text-color7);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+}
+.products_filter {
+    display: flex;
+}
+.buy_content {
+    &-pay {
+        &-title {
+            margin-top: 30px;
+        }
+        input {
+            width: 6%;
+            height: 18px;
+            box-shadow: none;
+            cursor: pointer;
+        }
+        &-item {
+            width: 100%;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            padding: 10px 0;
+            background-color: #FFF;
+            box-shadow: 0px 1px 2px 0px rgba(15, 23, 42, 0.06);
+            border: none;
+            outline: none;
+        }
+        label {
+            margin-left: 13px;
+            color: var(--text-color7);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}
+
+.product_hot-item {
+    position: relative;
+    margin-top: 40px;
+}
+.products_many {
+    margin-bottom: 100px;
+}
+
+.product_hot {
+    &-item-content {
+        margin-top: 28px;
+        p:nth-child(2) {
+            margin: 8px 0;
+        }
+        &-title {
+            color: var(--text-color9);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+        }
+
+        &-price {
+            color: var(--primary-color);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            span {
+                color: var(--text-color4);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-decoration: line-through;
+                margin-left: 8px;
+            }
+        }
+    }
+   
+    &-item-like {
+        background-color: var(--white);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 3%;
+        right: 8%;
+        border-radius: 40px;
+        padding: 16px;
+        button {
+            position: absolute;
+            top: 4px;
+            left: 5.5px;
+            background: #FFF;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
