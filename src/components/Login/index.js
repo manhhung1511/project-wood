@@ -9,18 +9,18 @@ const Login = ({onClose, onRegister}) => {
     const [formData, setFormData] = useState({
         email:'',
         password: '',
-        username: "Nguyễn Mạnh Hùng",
-        number: "0336662001",
+        username: "Dương Tú",
+        email: "duongtu@gmail.com",
         province: "Hà Nội",
         district: "Đống Đa",
-        address_detail: "14 Trần Quang Diệu"
+        address_detail: "20 Hoàng Cầu"
     });
 
     const [errors, setErrors] = useState({});
 
     const validateForm = () => {
         let newErrors = { };
-        if (formData.email.trim() === '') {
+        if (formData.number.trim() === '') {
           newErrors.email = 'Số điện thoại không được để trống';
         }
         if (formData.password.trim() === '') {
@@ -61,10 +61,10 @@ const Login = ({onClose, onRegister}) => {
                             <input 
                             type="text"
                             placeholder="Nhập số điện thoại" 
-                            name="email"
+                            name="number"
                             onChange={handleInputChange}
                             />
-                             {errors.email && <div className="error_input">{errors.email}</div>}
+                             {errors.number && <div className="error_input">{errors.number}</div>}
                         </div>
 
                         <div className={cx("login_password")}>
