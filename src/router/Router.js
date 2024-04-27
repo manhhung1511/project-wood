@@ -25,6 +25,7 @@ import Employee from '../components/admin/Employee';
 import Success from '../components/Buy/Success';
 import Otp from '../components/otp';
 import Search from '../components/Search';
+import DetailNew from '../components/DetailNew';
 
 function Router() {
     let routes = [
@@ -63,6 +64,10 @@ function Router() {
         {
             path: '/news',
             element: <Newss/>
+        },
+        {
+            path: '/detail-new',
+            element: <DetailNew/>
         },
         {
             path: '/introduce',

@@ -36,22 +36,20 @@ const Products = () => {
     setLikedProducts(storedLikedProducts);
   },[])
   
-  const handleLike = (product) => {
-     const check = likedProducts.some(obj => obj.id == product.id);
-    if (!check) {
-      const updatedLikedProducts = [...likedProducts, product];
-      setLikedProducts(updatedLikedProducts);
-      // Update the localStorage with the new liked products
-      localStorage.setItem(
-        "likedProducts",
-        JSON.stringify(updatedLikedProducts)
-      );
-    } else {
-      const newProduct = likedProducts.filter((item) => item.id !== product.id);
-      setLikedProducts(newProduct);
-      localStorage.setItem("likedProducts", JSON.stringify(newProduct));
+
+   const handleLike = (product) => {
+        const check = likedProducts.some(obj => obj.id == product.id);
+        if (!check) {
+            const updatedLikedProducts = [...likedProducts, product];
+            setLikedProducts(updatedLikedProducts);
+             // Update the localStorage with the new liked products
+            localStorage.setItem('likedProducts', JSON.stringify(updatedLikedProducts));
+        } else {
+            const newProduct = likedProducts.filter(item => item.id !== product.id);
+            setLikedProducts(newProduct);
+            localStorage.setItem('likedProducts', JSON.stringify(newProduct));
+        }
     }
-  };
 
   return (
     <div className={cx("products")}>
@@ -80,145 +78,13 @@ const Products = () => {
       <div className={cx("container")}>
         <div className={cx("products_many")}>
           <div className={cx("row")}>
-            <div className={cx("col-sm-3")}>
-              <div className={cx("filter_title")}>Bộ lọc</div>
-              <div className={cx("filter_product")}>
-                <p className={cx("filter_product-desc")}>DANH MỤC</p>
-                <div className={cx("buy_content-pay")}>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="cod"
-                      name="fav_language"
-                      value="cod"
-                      onClick={() => handleFull(0)}
-                    />
-                    <label for="cod">Tất cả</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="cod"
-                      name="fav_language"
-                      value="cod"
-                      onClick={() => handleCategory(1)}
-                    />
-                    <label for="cod">Phòng khách</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(2)}
-                    />
-                    <label for="payment">Phòng bếp</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(3)}
-                    />
-                    <label for="payment">Phòng ngủ</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(4)}
-                    />
-                    <label for="payment">Phòng thờ</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(5)}
-                    />
-                    <label for="payment">Phòng làm việc</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(6)}
-                    />
-                    <label for="payment">Đồ trang trí</label>
-                  </div>
-                </div>
-
-                <p className={cx("filter_product-desc")} style={{"margin-top": "30px"}}>MÀU SẮC</p>
-                <div className={cx("buy_content-pay")}>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="cod"
-                      name="fav_language"
-                      value="cod"
-                      onClick={() => handleFull(0)}
-                    />
-                    <label for="cod">Tất cả</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="cod"
-                      name="fav_language"
-                      value="cod"
-                      onClick={() => handleCategory(1)}
-                    />
-                    <label for="cod">Màu nguyên bản</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(2)}
-                    />
-                    <label for="payment">Màu trắng</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(3)}
-                    />
-                    <label for="payment">Màu nâu đậm</label>
-                  </div>
-                  <div className={cx("buy_content-pay-item")}>
-                    <input
-                      type="radio"
-                      id="payment"
-                      name="fav_language"
-                      value="payment"
-                      onClick={() => handleCategory(4)}
-                    />
-                    <label for="payment">Màu nâu nhẹ</label>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-            <div className={cx("col-sm-9")}>
-              <div className={cx("products_title")}>
+            <div className={cx("products_title")}>
                 <p>Sản phẩm</p>
               </div>
               <div className={cx("products_filter")}>
-                
+                <div className={cx("col-sm-9")}>
+                    <div className={cx("row")}>
+                    <div className={cx("col-sm-2")}>
                 <div className={cx("filter")}>
                     <input
                       type="radio"
@@ -229,8 +95,61 @@ const Products = () => {
                     />
   <label for="filter">Hàng mới</label>
                 </div>
-
+                </div>
+             
+                <div className={cx("col-sm-2")}>
                 <div className={cx("filter")}>
+                    <input
+                      type="radio"
+                      id="payment"
+                      name="fav_language"
+                      value="filter"
+                      // onClick={() => handleCategory(6)}
+                    />
+  <label for="filter">Xem nhiều</label>
+                </div>
+                </div>
+                <div className={cx("col-sm-2")}>
+                <div className={cx("filter")}>
+                    <input
+                      type="radio"
+                      id="payment"
+                      name="fav_language"
+                      value="filter"
+                      // onClick={() => handleCategory(6)}
+                    />
+  <label for="filter">Giảm giá</label>
+                </div>
+                </div>
+                <div className={cx("col-sm-3")}>
+                <div className={cx("filter")}>
+                    <input
+                      type="radio"
+                      id="payment"
+                      name="fav_language"
+                      value="filter"
+                      // onClick={() => handleCategory(6)}
+                    />
+  <label for="filter">Giá từ thấp đến cao</label>
+                </div>
+                </div>
+                <div className={cx("col-sm-3")}>
+                <div className={cx("filter")}>
+                    <input
+                      type="radio"
+                      id="payment"
+                      name="fav_language"
+                      value="filter"
+                      // onClick={() => handleCategory(6)}
+                    />
+  <label for="filter">Giá từ cao đến thấp</label>
+                </div>
+                </div>
+                    </div>
+                </div>
+              
+
+                {/* <div className={cx("filter")}>
                     <input
                       type="radio"
                       id="payment"
@@ -269,9 +188,145 @@ const Products = () => {
                       // onClick={() => handleCategory(6)}
                     />
   <label for="filter">Giá từ cao đến thấp</label>
+                </div> */}
+              </div>
+            </div>
+          <div className={cx("row")}>
+          
+            <div className={cx("col-sm-3")}>
+             
+              <div className={cx("filter_product")}>
+                <p className={cx("filter_product-desc")}>DANH MỤC</p>
+                <div className={cx("buy_content-pay")}>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="cod"
+                      name="fav_language"
+                      value="0"
+                      onClick={() => handleFull(0)}
+                    />
+                    <label for="cod">Tất cả</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="cod"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(1)}
+                    />
+                    <label for="cod">Phòng khách</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(2)}
+                    />
+                    <label for="payment">Phòng bếp</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(3)}
+                    />
+                    <label for="payment">Phòng ngủ</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(4)}
+                    />
+                    <label for="payment">Phòng thờ</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(5)}
+                    />
+                    <label for="payment">Phòng làm việc</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value={category}
+                      onClick={() => handleCategory(6)}
+                    />
+                    <label for="payment">Đồ trang trí</label>
+                  </div>
+                </div>
+
+                <p className={cx("filter_product-desc")} style={{"margin-top": "30px"}}>MÀU SẮC</p>
+                <div className={cx("buy_content-pay")}>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="cod"
+                      name="fav_language"
+                      value="cod"
+                      onClick={() => handleFull(0)}
+                    />
+                    <label for="cod">Tất cả</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="cod"
+                      name="fav_language"
+                      value="cod"
+                      onClick={() => handleCategory(1)}
+                    />
+                    <label for="cod">Màu nguyên bản</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value="payment"
+                      onClick={() => handleCategory(2)}
+                    />
+                    <label for="payment">Màu trắng</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value="payment"
+                      onClick={() => handleCategory(3)}
+                    />
+                    <label for="payment">Màu nâu đậm</label>
+                  </div>
+                  <div className={cx("buy_content-pay-item")}>
+                    <input
+                      type="checkbox"
+                      id="payment"
+                      name="fav_language"
+                      value="payment"
+                      onClick={() => handleCategory(4)}
+                    />
+                    <label for="payment">Màu nâu nhẹ</label>
+                  </div>
                 </div>
               </div>
-
+             
+            </div>
+            <div className={cx("col-sm-9")}>
               <div className="row">
                 {isCategory
                   ? categoryProducts.map((item, index) => {

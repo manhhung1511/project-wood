@@ -8,10 +8,9 @@ const cx = classNames.bind(styles);
 
 const Banner3 = () => {
     return (
-        <div className={cx("container")}>
             <div className={cx("banner3")}>
             <div className={cx("banner3_content")}>
-                <img src="./images/image44.png" alt="" style={{"max-width": "100%"}}/>
+                <img src="./images/image 44.png" alt="" style={{"max-width": "100%"}}/>
                 <div className={cx("banner3_content-item")}>
                     <h2>VỀ CHÚNG TÔI</h2>
 
@@ -21,7 +20,6 @@ const Banner3 = () => {
                 </div>
             </div>
         </div>
-    </div>
     );
    
 }

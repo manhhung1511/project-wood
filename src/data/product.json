@@ -1,9 +1,9 @@
 [
     {
         "id": "547",
-        "name": "Bộ bàn ghế Minh Quốc",
+        "name": "Bộ bàn ghế Minh Quốc ở Hà Nội 10 ghế, 2 bàn",
         "price": "800000000",
-        "description": "Áo thun thể thao là món đồ cổ điển vượt thời gian, có thể mặc lên hoặc xuống. Nó hoàn hảo cho một ngày đi chơi bình thường hoặc một dịp trang trọng hơn. Áo được làm từ 100% cotton, mềm mại và thoải mái khi mặc. Nó cũng có nhiều kích cỡ khác nhau, vì vậy bạn có thể tìm thấy kích cỡ phù hợp nhất với mình",
+        "description": "",
         "category": "1",
         "price_sales": "0",
         "number": 20,
@@ -18,7 +18,7 @@
         "price": "200000000",
         "price_sales": "0",
         "img": "https://i.postimg.cc/4xJsyZnD/Rectangle-46-3.png",
-        "description": "Áo thun thể thao là món đồ cổ điển vượt thời gian, có thể mặc lên hoặc xuống. Nó hoàn hảo cho một ngày đi chơi bình thường hoặc một dịp trang trọng hơn. Áo được làm từ 100% cotton, mềm mại và thoải mái khi mặc. Nó cũng có nhiều kích cỡ khác nhau, vì vậy bạn có thể tìm thấy kích cỡ phù hợp nhất với mình",
+        "description": "",
         "category": "2",
         "number": 40,
         "sizes": "Tay 14 - 6 món",
@@ -36,16 +36,7 @@
         "number": 30,
         "sizes": "Tay 14 - 6 món",
         "material": "Gỗ đinh chun",
-        "colors": "Nguyên bản màu gỗ",
-        "black": {
-            "image1":"https://canifa.com/img/212/284/resize/8/b/8bs23s013-sj777-2-thumb.webp",
-            "image2":"https://canifa.com/img/212/284/resize/8/b/8bs23s013-sj777-3.webp",
-            "image3":"https://canifa.com/img/212/284/resize/8/b/8bs23s013-sj777-4.webp",
-            "image4":"https://canifa.com/img/212/284/resize/8/b/8bs23s013-sj777-31-2.webp",
-            "image5":"https://i.postimg.cc/jjpXLPFH/product3.png",
-            "vi": "Đen"
-        },
-        "size": "https://i.postimg.cc/SKdYVXMs/11101914.png"
+        "colors": "Nguyên bản màu gỗ"
     },
     {
         "id": "555",
@@ -53,19 +44,39 @@
         "price": "22.000.000",
         "price_sales": "0",
         "img": "https://i.postimg.cc/prbtHMg1/Rectangle-46-1.png",
-        "description": "Áo thun thể thao là món đồ cổ điển vượt thời gian, có thể mặc lên hoặc xuống. Nó hoàn hảo cho một ngày đi chơi bình thường hoặc một dịp trang trọng hơn. Áo được làm từ 100% cotton, mềm mại và thoải mái khi mặc. Nó cũng có nhiều kích cỡ khác nhau, vì vậy bạn có thể tìm thấy kích cỡ phù hợp nhất với mình",
+        "description": "",
         "category": "2",
         "number": 60,
         "sizes": "Tay 14 - 6 món",
         "material": "Gỗ đinh chun",
-        "colors": "Nguyên bản màu gỗ",
-        "black": {
-            "image1":"https://product.hstatic.net/1000360022/product/_ing0061_1992219c12934d0d8a40aa06335cdbe2.jpg",
-            "image2":"https://product.hstatic.net/1000360022/product/5_website_4fdbadb3fa8b47b28393d8fda408df3d.jpg",
-            "image3":"https://product.hstatic.net/1000360022/product/2_website_39ff5a4470b9498686a3b170d897a183.jpg",
-            "image4":"https://product.hstatic.net/1000360022/product/3_website_d941d76cef8742909a34c13d093f15f4.jpg",
-            "image5":"https://i.postimg.cc/MTrz7Z1m/product4.png",
-            "vi": "Nâu"
-        }
+        "colors": "Nguyên bản màu gỗ"
+    },
+    {
+        "id": "559",
+        "name": "Bộ Bàn Ghế Sofa Nguyên Khối Gỗ Dâu Vàng",
+        "price": "53.000.000",
+        "price_sales": "0",
+        "img": "https://i.postimg.cc/kMZHYYrR/Rectangle-46.png",
+        "description": "",
+        "category": "2",
+        "number": 60,
+        "sizes": "Tay 14 - 6 món",
+        "material": "Gỗ đinh chun",
+        "colors": "Nguyên bản màu gỗ"
+    },
+    {
+        "id": "600",
+        "name": "Bộ bàn ghế tấm góc chữ L gỗ Ngọc Am gồm 1 ghế 1 bàn",
+        "price": "33.000.000",
+        "price_sales": "0",
+        "img": "https://i.postimg.cc/PfzgJz0C/Group-3.png",
+        "description": "",
+        "category": "2",
+        "number": 60,
+        "sizes": "Tay 14 - 6 món",
+        "material": "Gỗ đinh chun",
+        "colors": "Nguyên bản màu gỗ"
     }
+
+    
 ]

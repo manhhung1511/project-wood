@@ -44,7 +44,7 @@ const Newss = () => {
                         </div>
                         <div className={cx("col-sm-6")}>
                             <div className={cx("news-item")}>
-                                <img src="https://i.postimg.cc/FsG596tK/unsplash-l-LDh9-Jpp-H2c.png" alt=""/>
+                                <img style={{width: "100%"}} src="https://i.postimg.cc/FsG596tK/unsplash-l-LDh9-Jpp-H2c.png" alt=""/>
                             </div>
                         </div>  
                        
@@ -90,18 +90,20 @@ const Newss = () => {
                     </div>
                     <div className="row">
                         <div className={cx("col-sm-4")}>
+                        <Link to="/detail-new">
+
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 65.png" alt="image"/>
                             <p>20.04.2021 | 14:45</p>
-                            <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>
-                            </Link>
                         </div>  
+                        </Link>
+
                         </div> 
                         
                         <div className={cx("col-sm-4")}>
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 63.png" alt="image"/>
                             <p>20.04.2021 | 14:45</p>
                             <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>
@@ -109,7 +111,7 @@ const Newss = () => {
                         </div>  
                         </div> <div className={cx("col-sm-4")}>
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 66.png" alt="image"/>
                             <p>20.04.2021 | 14:45</p>
                             <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>
@@ -117,7 +119,8 @@ const Newss = () => {
                         </div>  
                         </div> <div className={cx("col-sm-4")}>
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                        <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 65.png" alt="image"/>
+
                             <p>20.04.2021 | 14:45</p>
                             <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>
@@ -125,7 +128,9 @@ const Newss = () => {
                         </div>  
                         </div> <div className={cx("col-sm-4")}>
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                        <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 63.png" alt="image"/>
+                       
+                            
                             <p>20.04.2021 | 14:45</p>
                             <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>
@@ -133,7 +138,8 @@ const Newss = () => {
                         </div>  
                         </div> <div className={cx("col-sm-4")}>
                         <div className={cx("news-full")}>
-                            <img style={{"max-width": "100%", "borderRadius": "10px"}} src="https://i.postimg.cc/50xdFs7P/e1984450dcb0fb2a9b336fbb995689ae.jpg" alt="image"/>
+                        <img style={{"max-width": "100%", "borderRadius": "10px"}} src="./images/Rectangle 66.png" alt="image"/>
+                            
                             <p>20.04.2021 | 14:45</p>
                             <Link to="/">
                                 <h3>Khám Phá Đồ Nội Thất Gỗ Mới: Tin Tức, Tư Vấn và Cập Nhật Tổng Quan!</h3>

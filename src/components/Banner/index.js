@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 const Banner = () => {
     return (
         <div className={cx("banner")}>
-            <img alt="" src="./images/Rectangle 39.png" className={cx("banner_img")}/>
+            <img alt="" src="./images/banner.png" className={cx("banner_img")}/>
             <div className={cx("banner_content")}>
                 <h3 className={cx("banner_content-title")}>
                     <span>KHÁM PHÁ NHỮNG SẢN PHẨM MỚI NHẤT CỦA CHÚNG TÔI</span>

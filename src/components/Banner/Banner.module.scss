@@ -8,8 +8,8 @@
 .banner {
     &_content {
         position: absolute;
-        top: 4%;
-        left: 50%;
+        top: 6%;
+        left: 51%;
         &-title {
             span {
                 color: var(--white);
@@ -21,13 +21,13 @@
         }
         h2 {
             color: var(--white);
-            font-size: 50px;
+            font-size: 47px;
             font-style: normal;
             font-weight: 700;
             line-height: 72px;
         }
         &-buy {
-            margin-top: 40px;
+            margin-top: 25px;
             border-radius: 100px;
             background: var(--primary-color);
             width: 200px;
