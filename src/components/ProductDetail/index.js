@@ -6,7 +6,7 @@ import Product from "../ProductNew";
 import Footer from "../Footer";
 import Cart from "./Cart";
 import Overlay from "../Overlay";
-import products from "../../data/product.json";
+import products from "../../data/all.json";
 import Size from "./Size";
 
 const cx = classNames.bind(styles);

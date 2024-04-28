@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Search.module.scss";
 import classNames from "classnames/bind";
 import Footer from "../Footer";
-import products from "../../data/product.json"
+import products from "../../data/search.json"
 import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
@@ -133,8 +133,10 @@ Bộ bàn ghế Minh Quốc tay 14 - 6 món
           )
           
         }
-        
+        <div style={{marginTop: "40px"}}>
         <Footer/>
+
+        </div>
     </div>
   );
 };

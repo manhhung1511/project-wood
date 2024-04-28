@@ -1,7 +1,7 @@
 [
     {
-        "id": "547",
-        "name": "Bộ bàn ghế Minh Quốc ở Hà Nội 10 ghế, 2 bàn",
+        "id": "590",
+        "name": "Bộ bàn ghế Minh Quốc",
         "price": "800000000",
         "description": "",
         "category": "1",
@@ -44,6 +44,32 @@
         "price": "22.000.000",
         "price_sales": "0",
         "img": "https://i.postimg.cc/prbtHMg1/Rectangle-46-1.png",
+        "description": "",
+        "category": "2",
+        "number": 60,
+        "sizes": "Tay 14 - 6 món",
+        "material": "Gỗ đinh chun",
+        "colors": "Nguyên bản màu gỗ"
+    },
+    {
+        "id": "559",
+        "name": "Bộ Bàn Ghế Sofa Nguyên Khối Gỗ Dâu Vàng",
+        "price": "53.000.000",
+        "price_sales": "0",
+        "img": "https://i.postimg.cc/kMZHYYrR/Rectangle-46.png",
+        "description": "",
+        "category": "2",
+        "number": 60,
+        "sizes": "Tay 14 - 6 món",
+        "material": "Gỗ đinh chun",
+        "colors": "Nguyên bản màu gỗ"
+    },
+    {
+        "id": "600",
+        "name": "Bộ bàn ghế tấm góc chữ L gỗ Ngọc Am gồm 1 ghế 1 bàn",
+        "price": "33.000.000",
+        "price_sales": "0",
+        "img": "https://i.postimg.cc/PfzgJz0C/Group-3.png",
         "description": "",
         "category": "2",
         "number": 60,
