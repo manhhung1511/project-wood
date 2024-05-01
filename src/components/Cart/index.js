@@ -15,6 +15,8 @@ const Cart = () => {
     setToCart(storedProducts);
   }, []);
 
+
+  console.log(cart)
   const addDot = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   };

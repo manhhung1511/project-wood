@@ -41,7 +41,7 @@
     {
         "id": "555",
         "name": "Ghế trường kỷ gỗ Gõ Đỏ Giá Rẻ gồm 3 món",
-        "price": "22.000.000",
+        "price": "22000000",
         "price_sales": "0",
         "img": "https://i.postimg.cc/prbtHMg1/Rectangle-46-1.png",
         "description": "",
@@ -67,9 +67,9 @@
     {
         "id": "600",
         "name": "Bộ bàn ghế tấm góc chữ L gỗ Ngọc Am gồm 1 ghế 1 bàn",
-        "price": "33.000.000",
+        "price": "33000000",
         "price_sales": "0",
-        "img": "https://i.postimg.cc/PfzgJz0C/Group-3.png",
+        "img": "https://i.postimg.cc/q7nPvwHC/Group-3.png",
         "description": "",
         "category": "2",
         "number": 60,

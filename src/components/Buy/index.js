@@ -53,12 +53,14 @@ const Buy = () => {
   };
 
   let sum = 0;
+  
   if(cart && cart.length > 0) {
     cart.forEach((item) => {
       const number = parseInt(item.price*item.number1, 10);
       sum += number;
     });
   }
+
 
   const validateForm = () => {
     let newErrors = {};
@@ -175,7 +177,7 @@ const Buy = () => {
                                             placeholder="Email"
                                             name="email"
                                             onChange={handleInputChange}
-                                            defaultValue={infor.email}
+                                            defaultValue={infor&&infor.email}
                                         />  
                              {errors.email && <div className="error_input">{errors.email}</div>}
 
@@ -191,7 +193,7 @@ const Buy = () => {
                                             name="number"
                                             value={ infor && infor.number}
                                             onChange={handleInputChange}
-                                          defaultValue={infor.number}
+                                          defaultValue={infor && infor.number}
                                         />  
                              {errors.number && <div className="error_input">{errors.number}</div>}
 
@@ -208,7 +210,7 @@ const Buy = () => {
                                         placeholder="Tỉnh/TP"
                                         name="province"
                                         onChange={handleInputChange}
-                                        defaultValue={infor.province}
+                                        defaultValue={infor&& infor.province}
                                     />  
                              {errors.province && <div className="error_input">{errors.province}</div>}
 
@@ -222,7 +224,7 @@ const Buy = () => {
                                             placeholder="Quận/Huyện"
                                             name="district"
                                             onChange={handleInputChange}
-                                            defaultValue={infor.district}
+                                            defaultValue={infor && infor.district}
                                         />  
                              {errors.district && <div className="error_input">{errors.district}</div>}
 
@@ -236,7 +238,7 @@ const Buy = () => {
                                         placeholder="Địa chỉ cụ thể"
                                         name="address_detail"
                                         onChange={handleInputChange}
-                                        defaultValue={infor.address_detail}
+                                        defaultValue={infor && infor.address_detail}
                                         />  
                              {errors.address_detail && <div className="error_input">{errors.address_detail}</div>}
 
