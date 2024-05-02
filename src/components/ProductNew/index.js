@@ -24,9 +24,9 @@ const Product = ({title}) => {
 
    
       const handleLike = (product) => {
-        if(likedProducts) {
+        if(Array.isArray(likedProducts) && likedProducts.length) {
           const check = likedProducts.some(obj => obj.id == product.id);
-
+    
           if (!check) {
           const updatedLikedProducts = [...likedProducts, product];
           setLikedProducts(updatedLikedProducts);
@@ -40,9 +40,9 @@ const Product = ({title}) => {
         }
           else {
             setLikedProducts([product]);
-            localStorage.setItem('likedProducts', JSON.stringify(product));
+            localStorage.setItem('likedProducts', JSON.stringify([product]));
         }
-    }
+      }
     return (
         <div class={cx("container")}>
             <div className={cx("product_hot")}>

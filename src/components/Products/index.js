@@ -39,7 +39,7 @@ const Products = () => {
 
   
   const handleLike = (product) => {
-    if(likedProducts) {
+    if(Array.isArray(likedProducts) && likedProducts.length) {
       const check = likedProducts.some(obj => obj.id == product.id);
 
       if (!check) {
@@ -55,9 +55,9 @@ const Products = () => {
     }
       else {
         setLikedProducts([product]);
-        localStorage.setItem('likedProducts', JSON.stringify(product));
+        localStorage.setItem('likedProducts', JSON.stringify([product]));
     }
-}
+  }
 
     const [isCart, setCart] = useState(false);
     const [cart, setToCart] = useState([]);
