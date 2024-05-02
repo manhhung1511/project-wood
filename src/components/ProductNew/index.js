@@ -22,17 +22,25 @@ const Product = ({title}) => {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
       };
 
-    const handleLike = (product) => {
-        const check = likedProducts.some(obj => obj.id == product.id)
-        if (!check) {
-            const updatedLikedProducts = [...likedProducts, product];
-            setLikedProducts(updatedLikedProducts);
-             // Update the localStorage with the new liked products
-            localStorage.setItem('likedProducts', JSON.stringify(updatedLikedProducts));
-        } else {
-            const newProduct = likedProducts.filter(item => item !== product);
+   
+      const handleLike = (product) => {
+        if(likedProducts) {
+          const check = likedProducts.some(obj => obj.id == product.id);
+
+          if (!check) {
+          const updatedLikedProducts = [...likedProducts, product];
+          setLikedProducts(updatedLikedProducts);
+           // Update the localStorage with the new liked products
+          localStorage.setItem('likedProducts', JSON.stringify(updatedLikedProducts));
+          } else {
+            const newProduct = likedProducts.filter(item => item.id !== product.id);
             setLikedProducts(newProduct);
             localStorage.setItem('likedProducts', JSON.stringify(newProduct));
+          }
+        }
+          else {
+            setLikedProducts([product]);
+            localStorage.setItem('likedProducts', JSON.stringify(product));
         }
     }
     return (
