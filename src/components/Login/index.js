@@ -7,13 +7,13 @@ const cx = classNames.bind(styles);
 
 const Login = ({onClose, onRegister}) => {
     const [formData, setFormData] = useState({
-        email:'',
         password: '',
         username: "Dương Tú",
         email: "duongtu@gmail.com",
         province: "Hà Nội",
         district: "Đống Đa",
-        address_detail: "20 Hoàng Cầu"
+        address_detail: "20 Hoàng Cầu",
+        number:''
     });
 
     const [errors, setErrors] = useState({});
@@ -21,7 +21,7 @@ const Login = ({onClose, onRegister}) => {
     const validateForm = () => {
         let newErrors = { };
         if (formData.number.trim() === '') {
-          newErrors.email = 'Số điện thoại không được để trống';
+          newErrors.number = 'Số điện thoại không được để trống';
         }
         if (formData.password.trim() === '') {
           newErrors.password = 'Mật khẩu không được để trống';

@@ -45,6 +45,7 @@ const Buy = () => {
     setToCart(storedProducts);
 
     const inforUser = JSON.parse(localStorage.getItem('user'));
+    localStorage.setItem("address",JSON.stringify(inforUser))
     setInfor(inforUser);
   },[])
 
